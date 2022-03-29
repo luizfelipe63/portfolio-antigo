@@ -1,0 +1,5 @@
+Paleta:
+
+#364C63
+#E9E3D7
+#F4F3EF
