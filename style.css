@@ -106,7 +106,8 @@ button.butao-home{
 }
 
 section.sobre{
-    height: 400px;
+    height: 100vh;
+    padding: 100px 0;
 }
 
 .titulo-sobre{
