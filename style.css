@@ -106,34 +106,67 @@ button.butao-home{
 }
 
 section.sobre{
-    height: 100vh;
     padding: 100px 0;
 }
 
-.titulo-sobre{
-    padding: 20px;
-    text-align: center;
-}
-
-.max-whidth-sobre{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 800px;
-}
-
-.subtitulo-sobre{
-    padding: 0px 0px 60px 0px;
-    text-align: center;
-}
-
-.sobre-content{
+.sobre .sobre-content{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.paragrafo-sobre{
-    padding-top: 30px;
-    text-align: justify;
+.sobre .titulo-sobre{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
 }
+
+.sobre .titulo-sobre::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color:var(--cor2);
+    transform:translateX(-50%) ;
+ }
+
+ .sobre .titulo-sobre::after{
+    content: "Quem sou eu";
+    position: absolute;
+    bottom:-12px;
+    left: 50%;
+    font-size: 20px;
+    background: #ffffff;
+    color: var(--cor4);
+    padding: 5px;
+    transform:translateX(-50%);
+ }
+
+ .sobre .sobre-content .colunm-left{
+     width: 45%;
+ }
+
+ .sobre .sobre-content .column-right{
+     width: 55%;
+ }
+
+ .sobre .sobre-content .column-right .texto span{
+    color: var(--cor4);
+    line-height: 1.5em;
+ }
+
+ .sobre .sobre-content .column-right p{
+     text-align: justify;
+     font-family: var(--fontetitulo);
+     line-height: 1.5em;
+     font-weight: 600;
+     
+ }
 
 footer.rodape{
     background-color:var(--cor2);
@@ -150,4 +183,26 @@ footer.rodape{
 .rodape > p > a{
     font-family: var(--fontetitulo);
     color: var(--cor4);
+}
+
+
+/*Responsive page*/
+
+@media(max-width:947px){
+    nav.menu{
+        display: none;
+    }
+
+    .sobre .sobre-content .column-right{
+        margin: 0 60px;
+        padding-top: 20px;
+        flex: 100%;
+    }
+
+    .sobre .sobre-content .column-left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto ;
+    }
+
 }
