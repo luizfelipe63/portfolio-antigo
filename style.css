@@ -1,12 +1,11 @@
-@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Ubuntu:wght@300&display=swap');
 
 :root{
-    --cor1:#05213a;
-    --cor2:#090b0d;
-    --cor3:#023059;
-    --cor4:#D9BA1E;
+    --cor0:#F2F2F2;
+    --cor1:#1675F2;
+    --cor2:#000000;
     --fontetexto:'Ubuntu',sans-serif;
     --fontetitulo:'Roboto', sans-serif;
 }
@@ -20,10 +19,11 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--cor0);
 }
 
 nav.menu{
-    background-color: var(--cor2);
+    background-color: var(--cor0);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,69 +37,76 @@ div.links-menu{
 }
 
 a.logo{
-    color:white;
+    color:var(--cor1);
     font-family: var(--fontetitulo);
     font-size: 30px;
 }
 
 span.logop2{
-    color: var(--cor4);
+    color: var(--cor2);
     font-family: var(--fontetexto);
     margin-left: -9px;
 }
 
 a.menu-link{
-    color: white;
+    color: var(--cor2);
     font-family: var(--fontetitulo);
     font-weight: 400;
     font-size: 15px;
 }
 
+a.menu-link:hover{
+    color: var(--cor1);
+}
+
 header.home{
-    display: flex;
-    justify-content: center;
-    background-image: url('imagens/img2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    margin-top: 60px ;
     height: 100vh;
     font-family: var(--fontetitulo);
-    color: #ffffff;
     min-height: 500px;
 }
 
 .home .max-whidth{
-    margin: auto 0 auto 48px;
+    margin: 80px;
 }
 
-.home .home-content .text-1{
-    font-size: 27px;
-    font-family: var(--fontetexto);
+.home-principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 400;
-    margin-left: -3px;
+.home-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.home .home-content .text-3{
-    font-family: var(--fontetexto);
-    font-size: 40px;
-    margin: 5px 0;
+.home-principal-escrito h1{
+    color: var(--cor2);
+    font-size: 60px;
 }
 
-.home .home-content .text-3 span{
-    color: var(--cor4);
-    font-weight: 600;
+.home-principal-escrito h2{
+    color: #00000084;
 }
 
-div.butao{
-    padding-top: 10px;
+.home-principal-escrito p{
+    max-width: 300px;
+    color: #00000084;
+    text-align: justify;
 }
 
-button.butao-home{
-    background-color: var(--cor4);
-    height: 35px;
+.home-principal img{
+    height: 300px;
+    width: 350px;
+}
+
+.home-principal-botao{
+    background-color: var(--cor1);
+    color: #ffffff;
+    height: 50px;
     width: 120px;
     border: 0px;
     border-radius: 10px;
@@ -189,6 +196,7 @@ footer.rodape{
 /*Responsive page*/
 
 @media(max-width:947px){
+
     nav.menu{
         display: none;
     }
