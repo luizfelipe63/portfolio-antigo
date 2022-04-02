@@ -6,8 +6,7 @@
     --cor0:#F2F2F2;
     --cor1:#1675F2;
     --cor2:#000000;
-    --fontetexto:'Ubuntu',sans-serif;
-    --fontetitulo:'Roboto', sans-serif;
+    --fonte:'Roboto', sans-serif;
 }
 
 *{
@@ -15,6 +14,7 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
     background-color: var(--cor0);
 }
 
-nav.menu{
+.menu{
     background-color: var(--cor0);
     display: flex;
     flex-direction: row;
@@ -30,72 +30,95 @@ nav.menu{
     padding: 16px;
 }
 
-div.links-menu{
+.menu a.logo{
+    color:var(--cor2);
+    font-family: var(--fonte);
+    font-size: 30px;
+}
+
+span.logop2{
+    color: var(--cor1);
+    font-family: var(--fonte);
+    margin-left: -9px;
+}
+
+.checkbtn {
+	font-size: 25px;
+	color: var(--cor1);
+	float: right;
+	line-height: 80px;
+	cursor: pointer;
+	display: none;
+}
+
+.checkbtn .icone{
+    padding-top: 7px ;
+}
+
+#check{
+    display: none;
+}
+
+.menu .links-menu ul{
     display: flex;
     gap: 54px;
     padding: 5px;
 }
 
-a.logo{
-    color:var(--cor1);
-    font-family: var(--fontetitulo);
-    font-size: 30px;
-}
-
-span.logop2{
+.menu .links-menu .menu-link {
     color: var(--cor2);
-    font-family: var(--fontetexto);
-    margin-left: -9px;
-}
-
-a.menu-link{
-    color: var(--cor2);
-    font-family: var(--fontetitulo);
+    font-family: var(--fonte);
     font-weight: 400;
     font-size: 15px;
 }
 
-a.menu-link:hover{
+.menu .links-menu .menu-link:hover{
     color: var(--cor1);
 }
 
-header.home{
-    margin-top: 60px ;
+.home{
     height: 100vh;
-    font-family: var(--fontetitulo);
+    font-family: var(--fonte);
     min-height: 500px;
+}
+
+.home .home-icons{
+    color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 20px;
 }
 
 .home .max-whidth{
     margin: 80px;
 }
 
-.home-principal{
+.home .home-principal{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.home-principal-escrito{
+.home .home-principal-escrito{
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 30px;
 }
 
 .home-principal-escrito h1{
     color: var(--cor2);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .home-principal-escrito h2{
-    color: #00000084;
+    color: #00000088;
 }
 
 .home-principal-escrito p{
     max-width: 300px;
-    color: #00000084;
-    text-align: justify;
+    color: #00000088;
 }
 
 .home-principal img{
@@ -105,6 +128,8 @@ header.home{
 
 .home-principal-botao{
     background-color: var(--cor1);
+    font-size: 14px;
+    font-weight: 500;
     color: #ffffff;
     height: 50px;
     width: 120px;
@@ -127,7 +152,7 @@ section.sobre{
     font-size: 40px;
     text-align: center;
     margin-bottom: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     position: relative;
 }
 
@@ -144,13 +169,15 @@ section.sobre{
 
  .sobre .titulo-sobre::after{
     content: "Quem sou eu";
+    font-family: var(--fonte);
+    font-weight: 100;
     position: absolute;
     bottom:-12px;
     left: 50%;
     font-size: 20px;
-    background: #ffffff;
+    background: var(--cor0);
     color: var(--cor4);
-    padding: 5px;
+    padding:5px;
     transform:translateX(-50%);
  }
 
@@ -163,15 +190,15 @@ section.sobre{
  }
 
  .sobre .sobre-content .column-right .texto span{
-    color: var(--cor4);
+    color: var(--cor1);
     line-height: 1.5em;
  }
 
  .sobre .sobre-content .column-right p{
      text-align: justify;
-     font-family: var(--fontetitulo);
+     font-family: var(--fonte);
      line-height: 1.5em;
-     font-weight: 600;
+     font-weight: 100;
      
  }
 
@@ -181,25 +208,89 @@ footer.rodape{
 }
 
 .rodape > p{
-    font-family: var(--fontetitulo);
+    font-family: var(--fonte);
     text-align: center;
     color: white;
     padding: 5px 0px 5px 0px;
 }
 
 .rodape > p > a{
-    font-family: var(--fontetitulo);
+    font-family: var(--fonte);
     color: var(--cor4);
 }
 
 
 /*Responsive page*/
 
+@media (max-width: 853px){
+
+    .menu a.logo{
+        font-size: 23px;
+    }
+    .menu span.logop2{
+        font-size: 25px;
+    }
+	.checkbtn {
+		display: block;
+	}
+    .checkbtn .icone{
+        display: flex;
+        font-size: 19px;
+        margin-left: 210px;
+    }
+    #check:checked ~ .links-menu ul {
+		left: 0;
+	}
+	.links-menu ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+		width: 100%;
+		height: 100vh;
+		background:var(--cor0);
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	.menu .links-menu .menu-link{
+		font-size: 16px;
+	}
+	ul a:hover{
+		background: none;
+		color: var(--cor1);
+	}
+    .home .home-icons{
+       display: flex;
+       align-items: flex-start;
+    }
+
+    .home-principal img{
+        margin-left: -50px;
+    }
+
+    .home .home-principal{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .home .home-principal-escrito{
+        display:flex;
+        gap: 20px;
+        margin-left: -46px;
+        text-align: justify;
+    }
+}
+
+
+
+
+
+
 @media(max-width:947px){
 
-    nav.menu{
-        display: none;
-    }
+	nav ul li a{
+		font-size: 16px;
+	}
 
     .sobre .sobre-content .column-right{
         margin: 0 60px;
@@ -213,4 +304,4 @@ footer.rodape{
         margin: 0 auto ;
     }
 
-}
+}   
