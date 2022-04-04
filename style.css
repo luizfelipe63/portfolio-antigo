@@ -77,9 +77,7 @@ span.logop2{
 }
 
 .home{
-    height: 100vh;
     font-family: var(--fonte);
-    min-height: 500px;
 }
 
 .home .home-icons{
@@ -137,86 +135,39 @@ span.logop2{
     border-radius: 10px;
 }
 
-section.sobre{
-    padding: 100px 0;
+.sobre .titulo-sobre{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
 }
 
 .sobre .sobre-content{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.sobre .titulo-sobre{
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 60px;
-    padding-bottom: 30px;
-    position: relative;
+.sobre .sobre-content .column-left{
+    margin-left: auto;
+    padding-right: 30px;
 }
 
-.sobre .titulo-sobre::before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background-color:var(--cor2);
-    transform:translateX(-50%) ;
- }
+.sobre .sobre-content .column-left .img-sobre{
+    height: 280px;
+    width: 350px;
+    border-radius: 5px;
+}
 
- .sobre .titulo-sobre::after{
-    content: "Quem sou eu";
-    font-family: var(--fonte);
-    font-weight: 100;
-    position: absolute;
-    bottom:-12px;
-    left: 50%;
-    font-size: 20px;
-    background: var(--cor0);
-    color: var(--cor4);
-    padding:5px;
-    transform:translateX(-50%);
- }
-
- .sobre .sobre-content .colunm-left{
-     width: 45%;
- }
-
- .sobre .sobre-content .column-right{
-     width: 55%;
- }
-
- .sobre .sobre-content .column-right .texto span{
-    color: var(--cor1);
+.sobre .sobre-content .column-rigth{
+    max-width: 400px;
     line-height: 1.5em;
- }
-
- .sobre .sobre-content .column-right p{
-     text-align: justify;
-     font-family: var(--fonte);
-     line-height: 1.5em;
-     font-weight: 100;
-     
- }
-
-footer.rodape{
-    background-color:var(--cor2);
-    height: 30px;
+    margin-right: auto;
+    padding-left: 30px;
 }
 
-.rodape > p{
-    font-family: var(--fonte);
-    text-align: center;
-    color: white;
-    padding: 5px 0px 5px 0px;
-}
-
-.rodape > p > a{
-    font-family: var(--fonte);
-    color: var(--cor4);
+.sobre .sobre-content .column-rigth span{
+    color: var(--cor1);
+    font-weight: bold;
 }
 
 
@@ -280,28 +231,3 @@ footer.rodape{
         text-align: justify;
     }
 }
-
-
-
-
-
-
-@media(max-width:947px){
-
-	nav ul li a{
-		font-size: 16px;
-	}
-
-    .sobre .sobre-content .column-right{
-        margin: 0 60px;
-        padding-top: 20px;
-        flex: 100%;
-    }
-
-    .sobre .sobre-content .column-left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto ;
-    }
-
-}   
