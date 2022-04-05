@@ -134,6 +134,9 @@ span.logop2{
     border: 0px;
     border-radius: 10px;
 }
+.sobre{
+    margin-bottom:55px;
+}
 
 .sobre .titulo-sobre{
     text-align: center;
@@ -149,7 +152,7 @@ span.logop2{
 
 .sobre .sobre-content .column-left{
     margin-left: auto;
-    padding-right: 30px;
+    padding-right: 40px;
 }
 
 .sobre .sobre-content .column-left .img-sobre{
@@ -159,15 +162,41 @@ span.logop2{
 }
 
 .sobre .sobre-content .column-rigth{
-    max-width: 400px;
+    max-width: 500px;
     line-height: 1.5em;
     margin-right: auto;
-    padding-left: 30px;
+    padding-left: 40px;
+}
+
+.sobre .sobre-content .column-rigth .texto{
+    color: #00000088;
+}
+
+.sobre .sobre-content .column-rigth p{
+    color: #00000088;
+    padding-bottom: 25px;
 }
 
 .sobre .sobre-content .column-rigth span{
     color: var(--cor1);
     font-weight: bold;
+}
+
+.sobre .sobre-content .column-rigth button{
+    background-color: var(--cor1);
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    height: 50px;
+    width: 120px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.habilidades .titulo-habilidades{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
 }
 
 
@@ -229,5 +258,17 @@ span.logop2{
         gap: 20px;
         margin-left: -46px;
         text-align: justify;
+    }
+    .sobre .sobre-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre .sobre-content .column-left {
+       padding: 0;
+       margin: 0 auto ;
+    }
+    .sobre .sobre-content .column-rigth{
+        text-align: center;
+        padding: 20px;
     }
 }
