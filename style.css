@@ -199,6 +199,19 @@ span.logop2{
     margin-bottom: 100px;
 }
 
+.habilidades-contet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+.habilidades-contet .skill{
+   background: var(--cor1); 
+   width: 100px;
+   height: 20px;
+}
+
 
 /*Responsive page*/
 
