@@ -201,17 +201,126 @@ span.logop2{
 
 .habilidades-contet{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 25px;
+    margin-bottom: 25px;
 }
 
-.habilidades-contet .skill{
-   background: var(--cor1); 
-   width: 100px;
-   height: 20px;
+.habilidades-contet .skill-1 i{
+    font-size: 35px;
+    color: #00000088;
+    padding: 5px;
 }
 
+.habilidades-contet .skill-1 .porcetagem-fora{
+    width: 617px;
+    height: 8px;
+    left: 40px;
+    top: 998px;
+    border: 3.5px solid var(--cor1);
+    border-radius: 30px;
+    margin-left: 4px;
+}
+
+.habilidades-contet .skill-1 .porcetagem{
+    width: 541px;
+    height: 2px;
+    left: 41px;
+    top: 999px;
+    background:var(--cor1) ;
+}
+
+.habilidades-contet .skill-2 i{
+    font-size: 35px;
+    color: #00000088;
+    padding: 5px;
+}
+
+.habilidades-contet .skill-2 .porcetagem-fora{
+    width: 617px;
+    height: 8px;
+    left: 40px;
+    top: 998px;
+    border: 3.5px solid var(--cor1);
+    border-radius: 30px;
+    margin-left: 4px;
+}
+
+.habilidades-contet .skill-2 .porcetagem{
+    width: 541px;
+    height: 2px;
+    left: 41px;
+    top: 999px;
+    background:var(--cor1) ;
+}
+
+.habilidades-contet .skill-3 i{
+    font-size: 35px;
+    color: #00000088;
+    padding: 5px;
+}
+
+.habilidades-contet .skill-3 .porcetagem-fora{
+    width: 617px;
+    height: 8px;
+    left: 40px;
+    top: 998px;
+    border: 3.5px solid var(--cor1);
+    border-radius: 30px;
+    margin-left: 4px;
+}
+
+.habilidades-contet .skill-3 .porcetagem{
+    width: 541px;
+    height: 2px;
+    left: 41px;
+    top: 999px;
+    background:var(--cor1) ;
+}
+
+.habilidades-contet .skill-4 p{
+    color: #00000088;
+    padding: 5px;
+}
+
+.habilidades-contet .skill-4 .porcetagem-fora{
+    width: 617px;
+    height: 8px;
+    left: 40px;
+    top: 998px;
+    border: 3.5px solid var(--cor1);
+    border-radius: 30px;
+    margin-left: 4px;
+}
+
+.habilidades-contet .skill-4 .porcetagem{
+    width: 541px;
+    height: 2px;
+    left: 41px;
+    top: 999px;
+    background:var(--cor1) ;
+}
+
+
+/*
+.porcetagem-fora{
+    width: 617px;
+    height: 8px;
+    left: 40px;
+    top: 998px;
+    border: 3.5px solid var(--cor1);
+    border-radius: 30px;
+    margin-left: 4px;
+}
+.porcetagem{
+    width: 207px;
+    height: 2px;
+    left: 41px;
+    top: 999px;
+    background:var(--cor1) ;
+}
+*/
 
 /*Responsive page*/
 
