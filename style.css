@@ -8,7 +8,6 @@
     --cor2:#000000;
     --fonte:'Roboto', sans-serif;
 }
-
 *{
     margin: 0px;
     padding: 0px;
@@ -16,11 +15,12 @@
     text-decoration: none;
     list-style: none;
 }
-
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--cor0);
 }
+
+/*Nav Menu*/
 
 .menu{
     background-color: var(--cor0);
@@ -29,19 +29,16 @@ body {
     justify-content: space-around;
     padding: 16px;
 }
-
 .menu a.logo{
     color:var(--cor2);
     font-family: var(--fonte);
     font-size: 30px;
 }
-
 span.logop2{
     color: var(--cor1);
     font-family: var(--fonte);
     margin-left: -9px;
 }
-
 .checkbtn {
 	font-size: 25px;
 	color: var(--cor1);
@@ -50,36 +47,34 @@ span.logop2{
 	cursor: pointer;
 	display: none;
 }
-
 .checkbtn .icone{
     padding-top: 7px ;
 }
-
 #check{
     display: none;
 }
-
 .menu .links-menu ul{
     display: flex;
     gap: 54px;
     padding: 5px;
 }
-
 .menu .links-menu .menu-link {
     color: var(--cor2);
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 15px;
 }
-
 .menu .links-menu .menu-link:hover{
     color: var(--cor1);
 }
 
+/*Header Home*/
+
 .home{
     font-family: var(--fonte);
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
-
 .home .home-icons{
     color: var(--cor1);
     display: flex;
@@ -88,104 +83,103 @@ span.logop2{
     font-size: 20px;
 }
 
-.home .max-whidth{
-    margin: 80px;
-}
-
 .home .home-principal{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-
 .home .home-principal-escrito{
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
 .home-principal-escrito h1{
     color: var(--cor2);
     font-size: 50px;
 }
-
 .home-principal-escrito h2{
     color: #00000088;
 }
-
 .home-principal-escrito p{
     max-width: 300px;
     color: #00000088;
 }
-
 .home-principal img{
     height: 300px;
     width: 350px;
 }
-
 .home-principal-botao{
     background-color: var(--cor1);
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     color: #ffffff;
     height: 50px;
     width: 120px;
     border: 0px;
     border-radius: 10px;
 }
-.sobre{
-    margin-bottom:55px;
+.home-principal-botao a{
+    color: white;
 }
 
+.home-principal-botao:hover{
+    background-color: #000000;
+}
+
+/*Sessão Sobre*/
+
+.sobre{
+    margin-bottom:100px;
+}
 .sobre .titulo-sobre{
     text-align: center;
     font-size: 40px;
-    margin-bottom: 100px;
 }
-
+.subtitulo-sobre{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 60px;
+}
 .sobre .sobre-content{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-
 .sobre .sobre-content .column-left{
     margin-left: auto;
     padding-right: 40px;
 }
-
 .sobre .sobre-content .column-left .img-sobre{
     height: 280px;
     width: 350px;
     border-radius: 5px;
 }
-
 .sobre .sobre-content .column-rigth{
     max-width: 500px;
     line-height: 1.5em;
     margin-right: auto;
     padding-left: 40px;
 }
-
 .sobre .sobre-content .column-rigth .texto{
     color: #00000088;
 }
-
 .sobre .sobre-content .column-rigth p{
     color: #00000088;
     padding-bottom: 25px;
 }
-
 .sobre .sobre-content .column-rigth span{
     color: var(--cor1);
     font-weight: bold;
 }
-
-.sobre .sobre-content .column-rigth button{
+.sobre .sobre-content .column-rigth button {
     background-color: var(--cor1);
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     color: #ffffff;
     height: 50px;
     width: 120px;
@@ -193,134 +187,199 @@ span.logop2{
     border-radius: 10px;
 }
 
-.habilidades .titulo-habilidades{
+/*Sessão Habilidades*/
+
+.titulo-habilidades{
     text-align: center;
     font-size: 40px;
-    margin-bottom: 100px;
 }
-
+.subtitulo-habilidades{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 60px;
+}
 .habilidades-contet{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 25px;
     margin-bottom: 25px;
 }
-
-.habilidades-contet .skill-1 i{
-    font-size: 35px;
+.habilidades-contet .front-end{
+    margin-left:auto;
+}
+.habilidades-contet .front-end h3{
+    padding-bottom: 10px;
+}
+.habilidades-contet .back-end{
+    margin-right:auto ;
+}
+.habilidades-contet .back-end h3{
+    padding-bottom: 10px;
+}
+#padding{
+    padding: 10px;
+}
+.habilidades-contet .front-end .skill-1 p{
+    font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-
-.habilidades-contet .skill-1 .porcetagem-fora{
-    width: 617px;
-    height: 8px;
-    left: 40px;
-    top: 998px;
-    border: 3.5px solid var(--cor1);
-    border-radius: 30px;
-    margin-left: 4px;
+.habilidades-contet .front-end .skill-1 span{
+    float: inline-end;
 }
-
-.habilidades-contet .skill-1 .porcetagem{
-    width: 541px;
-    height: 2px;
-    left: 41px;
-    top: 999px;
+.habilidades-contet .front-end .skill-1 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
+    border-radius: 30px;
+    width: 300px;
+}
+.habilidades-contet .front-end .skill-1 .porcetagem{
+    width: 95%;
+    height: 6px;
+    border-radius: 30px;
     background:var(--cor1) ;
 }
-
-.habilidades-contet .skill-2 i{
-    font-size: 35px;
+.habilidades-contet .front-end .skill-2 p{
+    font-family: var(--fonte);
+    font-size: 18px;
+    color: #00000088;
+    padding:5px;
+}
+.habilidades-contet .front-end .skill-2 span{
+    float: inline-end;
+}
+.habilidades-contet .front-end .skill-2 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
+    border-radius: 30px;
+}
+.habilidades-contet .front-end .skill-2 .porcetagem{
+    width: 70%;
+    height: 6px;
+    border-radius: 30px;
+    background:var(--cor1) ;
+}
+.habilidades-contet .front-end .skill-3 p{
+    font-family: var(--fonte);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+}
+.habilidades-contet .front-end .skill-3 span{
+    float: inline-end;
+}
+.habilidades-contet .front-end .skill-3 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
+    border-radius: 30px;
+}
+.habilidades-contet .front-end .skill-3 .porcetagem{
+    width: 70%;
+    height: 6px;
+    border-radius: 30px;
+    background:var(--cor1) 
+}
+.habilidades-contet .front-end .skill-4 p{
+    font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-
-.habilidades-contet .skill-2 .porcetagem-fora{
-    width: 617px;
-    height: 8px;
-    left: 40px;
-    top: 998px;
-    border: 3.5px solid var(--cor1);
+.habilidades-contet .front-end .skill-4 span{
+    float: inline-end;
+}
+.habilidades-contet .front-end .skill-4 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
     border-radius: 30px;
-    margin-left: 4px;
 }
-
-.habilidades-contet .skill-2 .porcetagem{
-    width: 541px;
-    height: 2px;
-    left: 41px;
-    top: 999px;
-    background:var(--cor1) ;
+.habilidades-contet .front-end .skill-4 .porcetagem{
+    width: 70%;
+    height: 6px;
+    border-radius: 30px;
+    background:var(--cor1) 
 }
-
-.habilidades-contet .skill-3 i{
-    font-size: 35px;
+.habilidades-contet .back-end .skill-1 p{
+    font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-
-.habilidades-contet .skill-3 .porcetagem-fora{
-    width: 617px;
-    height: 8px;
-    left: 40px;
-    top: 998px;
-    border: 3.5px solid var(--cor1);
+.habilidades-contet .back-end .skill-1 span{
+    float: inline-end;
+}
+.habilidades-contet .back-end .skill-1 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
     border-radius: 30px;
-    margin-left: 4px;
+    width: 300px;
 }
-
-.habilidades-contet .skill-3 .porcetagem{
-    width: 541px;
-    height: 2px;
-    left: 41px;
-    top: 999px;
-    background:var(--cor1) ;
+.habilidades-contet .back-end .skill-1 .porcetagem{
+    width: 70%;
+    height: 6px;
+    border-radius: 30px;
+    background:var(--cor1)
 }
-
-.habilidades-contet .skill-4 p{
+.habilidades-contet .back-end .skill-2 p{
+    font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-
-.habilidades-contet .skill-4 .porcetagem-fora{
-    width: 617px;
-    height: 8px;
-    left: 40px;
-    top: 998px;
-    border: 3.5px solid var(--cor1);
+.habilidades-contet .back-end .skill-2 span{
+    float: inline-end;
+}
+.habilidades-contet .back-end .skill-2 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
     border-radius: 30px;
-    margin-left: 4px;
 }
-
-.habilidades-contet .skill-4 .porcetagem{
-    width: 541px;
-    height: 2px;
-    left: 41px;
-    top: 999px;
-    background:var(--cor1) ;
-}
-
-
-/*
-.porcetagem-fora{
-    width: 617px;
-    height: 8px;
-    left: 40px;
-    top: 998px;
-    border: 3.5px solid var(--cor1);
+.habilidades-contet .back-end .skill-2 .porcetagem{
+    width: 70%;
+    height: 6px;
     border-radius: 30px;
-    margin-left: 4px;
+    background:var(--cor1);
 }
-.porcetagem{
-    width: 207px;
-    height: 2px;
-    left: 41px;
-    top: 999px;
-    background:var(--cor1) ;
+.habilidades-contet .back-end .skill-3 p{
+    font-size: 18px;
+    color: #00000088;
+    padding: 5px;
 }
-*/
+.habilidades-contet .back-end .skill-3 span{
+    float: inline-end;
+}
+.habilidades-contet .back-end .skill-3 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
+    border-radius: 30px;
+}
+.habilidades-contet .back-end .skill-3 .porcetagem{
+    width: 70%;
+    height: 6px;
+    border-radius: 30px;
+    background:var(--cor1);
+}
+.habilidades-contet .back-end .skill-4 p{
+    font-size: 18px;
+    color: #00000088;
+    padding: 5px;
+}
+.habilidades-contet .back-end .skill-4 span{
+    float: inline-end;
+}
+.habilidades-contet .back-end .skill-4 .porcetagem-fora{
+    background-color: #1675f273;
+    height: 6px;
+    border-radius: 30px;
+}
+.habilidades-contet .back-end .skill-4 .porcetagem{
+    width: 70%;
+    height: 6px;
+    border-radius: 30px;
+    background:var(--cor1);
+}
 
 /*Responsive page*/
 
