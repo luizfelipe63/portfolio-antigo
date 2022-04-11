@@ -202,6 +202,9 @@ span.logop2{
     padding-top: 5px;
     margin-bottom: 60px;
 }
+.habilidades{
+    margin-bottom: 100px;
+}
 .habilidades-contet{
     display: flex;
     justify-content: space-around;
@@ -381,6 +384,75 @@ span.logop2{
     background:var(--cor1);
 }
 
+/*Sessão Portifolio*/
+
+.portifolio{
+    margin-bottom: 100px;
+}
+.portifolio h1{
+    text-align: center;
+    font-size: 40px;
+}
+.portifolio h4{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 60px;
+}
+.portifolio-content{
+    display: flex;
+    justify-content: center;
+}
+.portifolio-content .projeto1{
+    background-image: url('imagens/sobreimg.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+.portifolio-content .projeto2{
+    background-image: url('imagens/projeto2.jpg');
+    background-size: cover;
+    background-position: center center ;
+    width: 300px;
+    height: 300px;
+}
+.portifolio-content .projeto3{
+    background-image: url('imagens/projeto3.jpg');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+/*Sessão Contato*/
+
+.contato{
+    margin-bottom: 100px;
+}
+.contato h1{
+    text-align: center;
+    font-size: 40px;
+}
+.contato h4{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 60px;
+}
+.contatos-content{
+    display: flex;
+    justify-content: space-around;
+}
+.contato-information{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
 /*Responsive page*/
 
 @media (max-width: 853px){
@@ -451,5 +523,15 @@ span.logop2{
     .sobre .sobre-content .column-rigth{
         text-align: center;
         padding: 20px;
+    }
+    .habilidades-contet{
+        display: flex;
+        flex-direction: column;
+    }
+    .habilidades-contet .front-end{
+        margin: 0;
+    }
+    .habilidades-contet .back-end{
+        margin: 0;
     }
 }
