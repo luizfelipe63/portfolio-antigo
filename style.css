@@ -452,6 +452,86 @@ span.logop2{
     display: flex;
     margin-bottom: 2rem;
 }
+.auto{
+    margin-left: auto;
+}
+.contato-information i{
+    font-size: 30px;
+    color: var(--cor1);
+    padding: 10px 20px ;
+}
+.contato-information h3{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+}
+form{
+    margin-right: auto;
+}
+.cliente{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.cliente .contato-cliente{
+    background-color: #1675f24c;
+    padding:10px 0 0 16px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+.cliente .contato-cliente label{
+    font-family: var(--fonte);
+    font-size: 13px;
+}
+.cliente .contato-cliente input{
+    width: 100%;
+    background-color: #1675f200;
+    border: none;
+    outline: none;
+    padding:10px 0 10px;
+}
+.projeto{
+    padding-bottom: 20px;
+}
+.projeto .contato-projeto{
+    background-color: #1675f24c;
+    padding: .75rem 1rem .25rem;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+.projeto .contato-projeto label{
+    font-family: var(--fonte);
+    font-size: 13px;
+}
+.projeto .contato-projeto input{
+    width: 100%;
+    background-color: #1675f200;
+    border: none;
+    outline: none;
+    padding:12px;
+}
+.mensagem .contato-mensagem{
+    background-color: #1675f24c;
+    padding: .25rem .5rem .5rem 0;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+.mensagem .contato-mensagem label{
+    font-family: var(--fonte);
+    font-size: 13px;
+}
+.mensagem .contato-mensagem input{
+    width: 100%;
+    background-color: #1675f200;
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+
+
 
 /*Responsive page*/
 
