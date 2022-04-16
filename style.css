@@ -28,6 +28,9 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .menu a.logo{
     color:var(--cor2);
@@ -61,7 +64,7 @@ span.logop2{
 .menu .links-menu .menu-link {
     color: var(--cor2);
     font-family: var(--fonte);
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
 }
 .menu .links-menu .menu-link:hover{
@@ -72,8 +75,8 @@ span.logop2{
 
 .home{
     font-family: var(--fonte);
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
 }
 .home .home-icons{
     color: var(--cor1);
@@ -114,8 +117,8 @@ span.logop2{
     font-size: 15px;
     font-weight: 400;
     color: #ffffff;
-    height: 50px;
-    width: 120px;
+    height: 55px;
+    width: 130px;
     border: 0px;
     border-radius: 10px;
 }
@@ -130,7 +133,7 @@ span.logop2{
 /*Sessão Sobre*/
 
 .sobre{
-    margin-bottom:100px;
+    margin-bottom:140px;
 }
 .sobre .titulo-sobre{
     text-align: center;
@@ -181,12 +184,17 @@ span.logop2{
     font-size: 15px;
     font-weight: 400;
     color: #ffffff;
-    height: 50px;
-    width: 120px;
+    height: 55px;
+    width: 130px;
     border: 0px;
     border-radius: 10px;
 }
-
+.sobre .sobre-content .column-rigth button a{
+    color: white;
+}
+.sobre .sobre-content .column-rigth button:hover{
+    background-color: #000000;
+}
 /*Sessão Habilidades*/
 
 .titulo-habilidades{
@@ -203,7 +211,7 @@ span.logop2{
     margin-bottom: 60px;
 }
 .habilidades{
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 .habilidades-contet{
     display: flex;
@@ -387,7 +395,7 @@ span.logop2{
 /*Sessão Portifolio*/
 
 .portifolio{
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 .portifolio h1{
     text-align: center;
@@ -401,6 +409,13 @@ span.logop2{
     text-align: center;
     padding-top: 5px;
     margin-bottom: 60px;
+}
+.portifolio h4 a{
+    color: var(--cor1);
+}
+.portifolio h4 a i{
+    font-size: 12px;
+    font-weight: 600;
 }
 .portifolio-content{
     display: flex;
@@ -429,7 +444,7 @@ span.logop2{
 /*Sessão Contato*/
 
 .contato{
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 .contato h1{
     text-align: center;
@@ -536,8 +551,8 @@ form{
     font-size: 15px;
     font-weight: 400;
     color: #ffffff;
-    height: 50px;
-    width: 120px;
+    height: 53px;
+    width: 130px;
     border: 0px;
     border-radius: 10px;
     margin-top: 20px;
@@ -546,6 +561,12 @@ form{
 .envie i{
     padding-left: 5px;
 }
+.envie:hover{
+    background-color: #000000;
+}
+
+/*Rodapé*/
+
 .rodape{
     background-color: var(--cor1);
     color: white;
@@ -570,6 +591,9 @@ form{
     gap: 16px;
     font-size: 20px;
 }
+.rodape .rodape-man .icons-rodape a{
+    color: white;
+}
 .rodape .rodape-man .rodape-menu ul{
     display: flex;
     flex-direction: column;
@@ -577,9 +601,6 @@ form{
 }
 .rodape .rodape-man .rodape-menu ul a{
     color: white;
-}
-.rodape .rodape-man .rodape-menu ul a:hover{
-    color: #000000;
 }
 .rodape .rodape-paragrafo{
     text-align: center;
