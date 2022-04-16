@@ -250,7 +250,7 @@ span.logop2{
     width: 300px;
 }
 .habilidades-contet .front-end .skill-1 .porcetagem{
-    width: 95%;
+    width: 90%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) ;
@@ -270,7 +270,7 @@ span.logop2{
     border-radius: 30px;
 }
 .habilidades-contet .front-end .skill-2 .porcetagem{
-    width: 70%;
+    width: 85%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) ;
@@ -309,7 +309,7 @@ span.logop2{
     border-radius: 30px;
 }
 .habilidades-contet .front-end .skill-4 .porcetagem{
-    width: 70%;
+    width: 75%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) 
@@ -329,7 +329,7 @@ span.logop2{
     width: 300px;
 }
 .habilidades-contet .back-end .skill-1 .porcetagem{
-    width: 70%;
+    width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1)
@@ -348,7 +348,7 @@ span.logop2{
     border-radius: 30px;
 }
 .habilidades-contet .back-end .skill-2 .porcetagem{
-    width: 70%;
+    width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1);
@@ -367,7 +367,7 @@ span.logop2{
     border-radius: 30px;
 }
 .habilidades-contet .back-end .skill-3 .porcetagem{
-    width: 70%;
+    width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1);
@@ -386,7 +386,7 @@ span.logop2{
     border-radius: 30px;
 }
 .habilidades-contet .back-end .skill-4 .porcetagem{
-    width: 70%;
+    width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1);
