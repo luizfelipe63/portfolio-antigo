@@ -59,7 +59,7 @@ span.logop2{
 .menu .links-menu ul{
     display: flex;
     gap: 54px;
-    padding: 5px;
+    padding-top: 5px;
 }
 .menu .links-menu .menu-link {
     color: var(--cor2);
@@ -78,14 +78,6 @@ span.logop2{
     margin-top: 12rem;
     margin-bottom: 8rem;
 }
-.home .home-icons{
-    color: var(--cor1);
-    display: flex;
-    flex-direction: column;
-    gap: 13px;
-    font-size: 20px;
-}
-
 .home .home-principal{
     display: flex;
     flex-direction: row;
@@ -618,10 +610,10 @@ form{
 @media (max-width: 853px){
 
     .menu a.logo{
-        font-size: 23px;
+        font-size: 27px;
     }
     .menu span.logop2{
-        font-size: 25px;
+        font-size: 27px;
     }
 	.checkbtn {
 		display: block;
@@ -641,7 +633,7 @@ form{
 		width: 100%;
 		height: 100vh;
 		background:var(--cor0);
-		top: 80px;
+		top: 54px;
 		left: -100%;
 		text-align: center;
 		transition: all .5s;
@@ -653,13 +645,17 @@ form{
 		background: none;
 		color: var(--cor1);
 	}
-    .home .home-icons{
-       display: flex;
-       align-items: flex-start;
+    .home-principal-escrito h1{
+        font-size: 40px;
     }
-
+    .home-principal-escrito h2{
+        font-size: 20px;
+    }
+    .home-principal-escrito p{
+        font-size: 15px;
+    }
     .home-principal img{
-        margin-left: -50px;
+        margin-bottom: 3rem;
     }
 
     .home .home-principal{
@@ -671,6 +667,12 @@ form{
         gap: 20px;
         margin-left: -46px;
         text-align: justify;
+    }
+    .sobre .titulo-sobre{
+        font-size: 30px;
+    }
+    .sobre .subtitulo-sobre{
+        font-size: 13px;
     }
     .sobre .sobre-content{
         display: flex;
@@ -684,6 +686,12 @@ form{
         text-align: center;
         padding: 20px;
     }
+    .titulo-habilidades{
+        font-size: 30px;
+    }
+    .subtitulo-habilidades{
+        font-size: 13px;
+    }
     .habilidades-contet{
         display: flex;
         flex-direction: column;
@@ -694,4 +702,54 @@ form{
     .habilidades-contet .back-end{
         margin: 0;
     }
+    .portifolio h1{
+        font-size: 30px;
+    }
+    .portifolio h4{
+        font-size: 13px;
+    }
+    .portifolio-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contato{
+        margin-bottom: 100px;
+    }
+    .contato h1{
+        font-size: 30px;
+    }
+    .contato h4{
+        font-size: 13px;
+    }
+    .contatos-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .cliente{
+        display: flex;
+        flex-direction: column;
+    }
+    form{
+        margin-right: 0;
+    }
+   .auto{
+       margin-left: 0;
+       padding: 0;
+       margin-bottom: 4rem;
+    }
+    .contato-information{
+        font-size: 12px;
+    }
+    .inputs-contat{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+   .rodape .rodape-man{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       margin-left: 20px;
+       gap: 50px;
+   }
 }
