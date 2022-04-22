@@ -384,6 +384,45 @@ span.logop2{
     background:var(--cor1);
 }
 
+/*Sessão Serviços*/
+
+.serviços{
+    margin-bottom: 140px;
+}
+.serviços h1{
+    text-align: center;
+    font-size: 40px;
+}
+.serviços h4{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 60px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.servicos-conteiner{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    padding: 6rem 5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+.servicos-conteiner div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.servicos-conteiner div {
+    color: var(--cor1);
+}
 /*Sessão Portifolio*/
 
 .portifolio{
@@ -413,6 +452,12 @@ span.logop2{
     display: flex;
     justify-content: center;
 }
+.portifolio p{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+/*
 .portifolio-content .projeto1{
     background-image: url('imagens/sobreimg.jpg');
     background-size: cover;
@@ -432,6 +477,7 @@ span.logop2{
     width: 300px;
     height: 300px;
 }
+*/
 
 /*Sessão Contato*/
 
@@ -752,4 +798,10 @@ form{
        margin-left: 20px;
        gap: 50px;
    }
+   .center{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
 }
