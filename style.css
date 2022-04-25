@@ -19,6 +19,22 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--cor0);
 }
+#titulo{
+    text-align: center;
+    font-size: 40px;
+}
+#subtitulo{
+    font-family: var(--fonte);
+    font-size: 15px;
+    font-weight: lighter;
+    color: #00000088;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 60px;
+}
+.margin{
+    margin-bottom:140px;
+}
 
 /*Nav Menu*/
 
@@ -117,61 +133,47 @@ span.logop2{
 .home-principal-botao a{
     color: white;
 }
-
+.home-principal-botao i{
+    text-align: center;
+}
 .home-principal-botao:hover{
-    background-color: #000000;
+    background-color: #0a0123;
 }
 
 /*Sessão Sobre*/
 
-.sobre{
-    margin-bottom:140px;
-}
-.sobre .titulo-sobre{
-    text-align: center;
-    font-size: 40px;
-}
-.subtitulo-sobre{
-    font-family: var(--fonte);
-    font-size: 15px;
-    font-weight: lighter;
-    color: #00000088;
-    text-align: center;
-    padding-top: 5px;
-    margin-bottom: 60px;
-}
-.sobre .sobre-content{
+.sobre-content{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
-.sobre .sobre-content .column-left{
+.column-left{
     margin-left: auto;
     padding-right: 40px;
 }
-.sobre .sobre-content .column-left .img-sobre{
+.column-left .img-sobre{
     height: 280px;
     width: 350px;
     border-radius: 5px;
 }
-.sobre .sobre-content .column-rigth{
+.column-rigth{
     max-width: 500px;
     line-height: 1.5em;
     margin-right: auto;
     padding-left: 40px;
 }
-.sobre .sobre-content .column-rigth .texto{
+.column-rigth .texto{
     color: #00000088;
 }
-.sobre .sobre-content .column-rigth p{
+.column-rigth p{
     color: #00000088;
     padding-bottom: 25px;
 }
-.sobre .sobre-content .column-rigth span{
+.column-rigth span{
     color: var(--cor1);
     font-weight: bold;
 }
-.sobre .sobre-content .column-rigth button {
+.column-rigth button {
     background-color: var(--cor1);
     font-size: 15px;
     font-weight: 400;
@@ -181,30 +183,15 @@ span.logop2{
     border: 0px;
     border-radius: 10px;
 }
-.sobre .sobre-content .column-rigth button a{
+.column-rigth button a{
     color: white;
 }
-.sobre .sobre-content .column-rigth button:hover{
-    background-color: #000000;
+.column-rigth button:hover{
+    background-color: #0a0123;
 }
+
 /*Sessão Habilidades*/
 
-.titulo-habilidades{
-    text-align: center;
-    font-size: 40px;
-}
-.subtitulo-habilidades{
-    font-family: var(--fonte);
-    font-size: 15px;
-    font-weight: lighter;
-    color: #00000088;
-    text-align: center;
-    padding-top: 5px;
-    margin-bottom: 60px;
-}
-.habilidades{
-    margin-bottom: 140px;
-}
 .habilidades-contet{
     display: flex;
     justify-content: space-around;
@@ -212,172 +199,166 @@ span.logop2{
     gap: 25px;
     margin-bottom: 25px;
 }
-.habilidades-contet .front-end{
-    margin-left:auto;
-}
-.habilidades-contet .front-end h3{
-    padding-bottom: 10px;
-}
-.habilidades-contet .back-end{
-    margin-right:auto ;
-}
-.habilidades-contet .back-end h3{
-    padding-bottom: 10px;
-}
 #padding{
     padding: 10px;
 }
-.habilidades-contet .front-end .skill-1 p{
+.skill-parte1{
+    margin-left:auto;
+}
+.skill-parte2{
+    margin-right:auto ;
+}
+.skill-parte1 .skill-1 p{
     font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-.habilidades-contet .front-end .skill-1 span{
+.skill-parte1 .skill-1 span{
     float: inline-end;
 }
-.habilidades-contet .front-end .skill-1 .porcetagem-fora{
+.skill-parte1 .skill-1 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
     width: 300px;
 }
-.habilidades-contet .front-end .skill-1 .porcetagem{
+.skill-parte1 .skill-1 .porcetagem{
     width: 90%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) ;
 }
-.habilidades-contet .front-end .skill-2 p{
+.skill-parte1 .skill-2 p{
     font-family: var(--fonte);
     font-size: 18px;
     color: #00000088;
     padding:5px;
 }
-.habilidades-contet .front-end .skill-2 span{
+.skill-parte1 .skill-2 span{
     float: inline-end;
 }
-.habilidades-contet .front-end .skill-2 .porcetagem-fora{
+.skill-parte1 .skill-2 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
 }
-.habilidades-contet .front-end .skill-2 .porcetagem{
+.skill-parte1 .skill-2 .porcetagem{
     width: 85%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) ;
 }
-.habilidades-contet .front-end .skill-3 p{
+.skill-parte1 .skill-3 p{
     font-family: var(--fonte);
+    color: #00000088;
     font-size: 18px;
-    font-weight: 400;
     padding: 5px;
 }
-.habilidades-contet .front-end .skill-3 span{
+.skill-parte1 .skill-3 span{
     float: inline-end;
 }
-.habilidades-contet .front-end .skill-3 .porcetagem-fora{
+.skill-parte1 .skill-3 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
 }
-.habilidades-contet .front-end .skill-3 .porcetagem{
+.skill-parte1 .skill-3 .porcetagem{
     width: 70%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) 
 }
-.habilidades-contet .front-end .skill-4 p{
+.skill-parte1 .skill-4 p{
     font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-.habilidades-contet .front-end .skill-4 span{
+.skill-parte1 .skill-4 span{
     float: inline-end;
 }
-.habilidades-contet .front-end .skill-4 .porcetagem-fora{
+.skill-parte1 .skill-4 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
 }
-.habilidades-contet .front-end .skill-4 .porcetagem{
+.skill-parte1 .skill-4 .porcetagem{
     width: 75%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1) 
 }
-.habilidades-contet .back-end .skill-1 p{
+.skill-parte2 .skill-1 p{
     font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-.habilidades-contet .back-end .skill-1 span{
+.skill-parte2 .skill-1 span{
     float: inline-end;
 }
-.habilidades-contet .back-end .skill-1 .porcetagem-fora{
+.skill-parte2 .skill-1 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
     width: 300px;
 }
-.habilidades-contet .back-end .skill-1 .porcetagem{
+.skill-parte2 .skill-1 .porcetagem{
     width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1)
 }
-.habilidades-contet .back-end .skill-2 p{
+.skill-parte2 .skill-2 p{
     font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-.habilidades-contet .back-end .skill-2 span{
+.skill-parte2 .skill-2 span{
     float: inline-end;
 }
-.habilidades-contet .back-end .skill-2 .porcetagem-fora{
+.skill-parte2 .skill-2 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
 }
-.habilidades-contet .back-end .skill-2 .porcetagem{
+.skill-parte2 .skill-2 .porcetagem{
     width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1);
 }
-.habilidades-contet .back-end .skill-3 p{
+.skill-parte2 .skill-3 p{
     font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-.habilidades-contet .back-end .skill-3 span{
+.back-end .skill-3 span{
     float: inline-end;
 }
-.habilidades-contet .back-end .skill-3 .porcetagem-fora{
+.skill-parte2 .skill-3 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
 }
-.habilidades-contet .back-end .skill-3 .porcetagem{
+.skill-parte2 .skill-3 .porcetagem{
     width: 0%;
     height: 6px;
     border-radius: 30px;
     background:var(--cor1);
 }
-.habilidades-contet .back-end .skill-4 p{
+.skill-parte2 .skill-4 p{
     font-size: 18px;
     color: #00000088;
     padding: 5px;
 }
-.habilidades-contet .back-end .skill-4 span{
+.skill-parte2 .skill-4 span{
     float: inline-end;
 }
-.habilidades-contet .back-end .skill-4 .porcetagem-fora{
+.skill-parte2 .skill-4 .porcetagem-fora{
     background-color: #1675f273;
     height: 6px;
     border-radius: 30px;
 }
-.habilidades-contet .back-end .skill-4 .porcetagem{
+.skill-parte2 .skill-4 .porcetagem{
     width: 0%;
     height: 6px;
     border-radius: 30px;
@@ -386,23 +367,7 @@ span.logop2{
 
 /*Sessão Serviços*/
 
-.serviços{
-    margin-bottom: 140px;
-}
-.serviços h1{
-    text-align: center;
-    font-size: 40px;
-}
-.serviços h4{
-    font-family: var(--fonte);
-    font-size: 15px;
-    font-weight: lighter;
-    color: #00000088;
-    text-align: center;
-    padding-top: 5px;
-    margin-bottom: 60px;
-}
-.center{
+.servicos-content{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -423,28 +388,20 @@ span.logop2{
 .servicos-conteiner div {
     color: var(--cor2);
 }
+#icone-serviços{
+    color: var(--cor1);
+    font-size: 25px;
+}
+#veja-mais{
+    color: var(--cor1); 
+}
+
 /*Sessão Portifolio*/
 
-.portifolio{
-    margin-bottom: 140px;
-}
-.portifolio h1{
-    text-align: center;
-    font-size: 40px;
-}
-.portifolio h4{
-    font-family: var(--fonte);
-    font-size: 15px;
-    font-weight: lighter;
-    color: #00000088;
-    text-align: center;
-    padding-top: 5px;
-    margin-bottom: 60px;
-}
-.portifolio h4 a{
+#subtitulo a{
     color: var(--cor1);
 }
-.portifolio h4 a i{
+#subtitulo a i{
     font-size: 12px;
     font-weight: 600;
 }
@@ -452,7 +409,7 @@ span.logop2{
     display: flex;
     justify-content: center;
 }
-.portifolio p{
+#portifolio p{
     font-size: 50px;
     text-align: center;
     padding-top: 30px;
@@ -481,22 +438,6 @@ span.logop2{
 
 /*Sessão Contato*/
 
-.contato{
-    margin-bottom: 140px;
-}
-.contato h1{
-    text-align: center;
-    font-size: 40px;
-}
-.contato h4{
-    font-family: var(--fonte);
-    font-size: 15px;
-    font-weight: lighter;
-    color: #00000088;
-    text-align: center;
-    padding-top: 5px;
-    margin-bottom: 60px;
-}
 .contatos-content{
     display: flex;
     justify-content: space-around;
@@ -600,7 +541,7 @@ form{
     padding-left: 5px;
 }
 .envie:hover{
-    background-color: #000000;
+    background-color: #0a0123;
 }
 
 /*Rodapé*/
@@ -654,7 +595,12 @@ form{
 /*Responsive page*/
 
 @media (max-width: 853px){
-
+    #titulo{
+        font-size: 30px;
+    }
+    #subtitulo{
+        font-size: 13px;
+    }
     .menu a.logo{
         font-size: 27px;
     }
@@ -714,45 +660,27 @@ form{
         margin-left: -46px;
         text-align: justify;
     }
-    .sobre .titulo-sobre{
-        font-size: 30px;
-    }
-    .sobre .subtitulo-sobre{
-        font-size: 13px;
-    }
-    .sobre .sobre-content{
+    .sobre-content{
         display: flex;
         flex-direction: column;
     }
-    .sobre .sobre-content .column-left {
+    .column-left {
        padding: 0;
        margin: 0 auto ;
     }
-    .sobre .sobre-content .column-rigth{
+    .column-rigth{
         text-align: center;
         padding: 20px;
-    }
-    .titulo-habilidades{
-        font-size: 30px;
-    }
-    .subtitulo-habilidades{
-        font-size: 13px;
     }
     .habilidades-contet{
         display: flex;
         flex-direction: column;
     }
-    .habilidades-contet .front-end{
+    .skill-parte1{
         margin: 0;
     }
-    .habilidades-contet .back-end{
+    .skill-parte2{
         margin: 0;
-    }
-    .portifolio h1{
-        font-size: 30px;
-    }
-    .portifolio h4{
-        font-size: 13px;
     }
     .portifolio-content{
         display: flex;
@@ -761,12 +689,6 @@ form{
     }
     .contato{
         margin-bottom: 100px;
-    }
-    .contato h1{
-        font-size: 30px;
-    }
-    .contato h4{
-        font-size: 13px;
     }
     .contatos-content{
         display: flex;
@@ -798,9 +720,9 @@ form{
        margin-left: 20px;
        gap: 50px;
    }
-   .center{
+   .servicos-content{
        display: flex;
-       flex-direction: column;
+       flex-direction:column;
        align-items: center;
    }
    

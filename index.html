@@ -42,36 +42,37 @@
                     <h1 >Luiz Felipe</h1>
                     <h2 >Desenvolvedor web</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque iusto nobis quaerat ipsum libero doloremque, placeat repellendus hic commodi, nulla ipsam. Quod eos saepe reprehenderit repellendus nobis cum reiciendis unde.</p>
-                    <button class="home-principal-botao"><a href="#contato">Fale comigo <i class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                    <button class="home-principal-botao"><a href="#contato">Fale comigo <i class="fa-solid fa-right-to-bracket"></i></a></button>
                 </div>
-                    <img class="home-principal-imagem" src="imagens/home.png" alt="">
+                <img class="home-principal-imagem" src="imagens/home.png" alt="">
             </div>
     
         </header>
     
         <!--Sobre mim-->
-        <section id="about" class="sobre">
-                <h1 class="titulo-sobre">Sobre mim</h1>
-                <h4 class="subtitulo-sobre">Minha introdução</h4>
-                <div class="sobre-content">
-                    <div class="column-left">
-                            <img class="img-sobre" src="imagens/sobreimg.jpg" alt="">
-                    </div>
-                    <div class="column-rigth">
-                        <div class="texto">Sou Luiz Felipe e sou <span>Desenvolvedor web</span></div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, modi autem totam ipsam accusantium sed est ad fugit? Assumenda dolorum ut dolores nostrum. Minus ut ea illum? Fugiat, aliquam quisquam!</p>
-                        <button><a href="">Download CV <i class="fa-solid fa-download"></i></a></button>
-                    </div>
+        <section id="about" class="margin">
+            <h1 id="titulo">Sobre mim</h1>
+            <h4 id="subtitulo">Minha introdução</h4>
+            <div class="sobre-content">
+                <div class="column-left">
+                     <img class="img-sobre" src="imagens/sobreimg.jpg" alt="">
+                </div>
+                <div class="column-rigth">
+                    <div class="texto">Sou Luiz Felipe e sou <span>Desenvolvedor web</span></div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, modi autem totam ipsam accusantium sed est ad fugit? Assumenda dolorum ut dolores nostrum. Minus ut ea illum? Fugiat, aliquam quisquam!</p>
+                    <button><a href="textos/Curriculoprofissional.pdf" download="curriculo">Download <i class="fa-solid fa-download"></i></a></button>
                 </div>
             </div>
         </section>
 
         <!--Habilidades-->
-        <section id="habilidades" class="habilidades">
-            <h1 class="titulo-habilidades">Habilidades</h1>
-            <h4 class="subtitulo-habilidades">Meu nível técnico</h4>
+        <section id="habilidades" class="margin">
+            <h1 id="titulo">Habilidades</h1>
+            <h4 id="subtitulo">Meu nível técnico</h4>
             <div class="habilidades-contet">
-                <div class="front-end">
+
+                <!--Parte 1-->
+                <div class="skill-parte1">
                     <div id="padding">
                         <div class="skill-1">
                             <p>HTML5 <span>90%</span></p>
@@ -105,7 +106,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="back-end">
+
+                <!--Parte 2-->
+                <div class="skill-parte2">
                     <div id="padding">
                         <div class="skill-1">
                             <p>PHP <span>0%</span></p>
@@ -143,38 +146,38 @@
         </section>
 
         <!--sessão Serviços-->
-        <section class="serviços" id="serviços">
-            <h1>Serviços</h1>
-            <h4>O que eu faço</h4>
-            <div class="center">
+        <section id="serviços" class="margin">
+            <h1 id="titulo">Serviços</h1>
+            <h4 id="subtitulo">O que eu faço</h4>
+            <div class="servicos-content">
                 <div class="servicos-conteiner">
                     <div>
-                        <i class="fa-solid fa-sitemap"></i>
+                        <i class="fa-solid fa-sitemap" id="icone-serviços"></i>
                         <h3>Sites Estáticos</h3>
-                        <p>Veja mais <i class="fa-solid fa-arrow-right"></i></p>
+                        <p id="veja-mais">Veja mais <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
                 <div class="servicos-conteiner">
                     <div>
-                        <i class="fa-solid fa-code"></i>
+                        <i class="fa-solid fa-code" id="icone-serviços"></i>
                         <h3>Sites dinâmicos</h3>
-                        <p>Veja mais <i class="fa-solid fa-arrow-right"></i></p>
+                        <p id="veja-mais">Veja mais <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
                 <div class="servicos-conteiner">
                     <div>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <i class="fa-solid fa-mobile-screen-button" id="icone-serviços"></i>
                         <h3>Aplicativos mobile</h3>
-                        <p>Veja mais <i class="fa-solid fa-arrow-right"></i></p>
+                        <p id="veja-mais">Veja mais <i class="fa-solid fa-arrow-right"></i></p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!--sessão portifolio-->
-        <section id="portifolio" class="portifolio">
-            <h1>Portifólio</h1>
-            <h4>Meus trabalhos.<a href="">Veja mais <i class="fa-regular fa-greater-than"></i></a></h4> 
+        <section id="portifolio" class="margin">
+            <h1 id="titulo">Portifólio</h1>
+            <h4 id="subtitulo">Meus trabalhos.<a href="">Veja mais <i class="fa-regular fa-greater-than"></i></a></h4> 
             <p>Em breve <i class="fa-solid fa-screwdriver-wrench"></i></p>
             
             <!--<div class="portifolio-content">
@@ -186,9 +189,9 @@
         </section>
 
         <!--Sessão contato-->
-        <section id="contato" class="contato">
-            <h1>Contate-me</h1>
-            <h4>Entrar em Contato</h4>
+        <section id="contato" class="margin">
+            <h1 id="titulo">Contate-me</h1>
+            <h4 id="subtitulo">Entrar em Contato</h4>
             <div class="contatos-content">
                <div class="auto">
                     <div class="contato-information">
