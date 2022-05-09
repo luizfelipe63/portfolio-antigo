@@ -1,4 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*================Variáveis===========*/
+:root{
+        --header-height: 4.5rem;
+      
+        /* colors */
+        --hue: 216;
+        /* HSL color mode */
+        --base-color: hsl(var(--hue) 99% 54%);
+        --base-color-second: hsl(var(--hue) 95% 61%);
+        --base-color-alt: hsl(var(--hue) 95% 61%);
+        --title-color: hsl(var(--hue) 41% 10%);
+        --text-color: hsl(0 0% 46%);
+        --text-color-light: hsl(0, 0%, 98%);
+        --body-color: hsl(0, 0%, 95%);
+      
+        /*FONTS*/
+        --size-title: 1.5rem;
+        --size-subtitle: 1rem;
+      
+        --body-font:'DM Sans', sans-serif;
+        --title-font:'Poppins', sans-serif;
+}
+
+body{
+    background: var(--body-color);
+    font-family: var(--body-font);
+}
+
+/*===========Layaout================*/
+.section{
+    padding: 2rem 0 4rem 0;
+}
+.container{
+    margin: 0 1.5rem;
+}
+.grid{
+    display: grid;
+    gap: 2rem;
+}
+.title{
+    font-size: var(--size-title);
+    font-family: var(--title-font);
+}
+.subtitle{
+    font-size: var(--size-subtitle);
+}
+.button{
+    display: inline-block;
+    text-align: center;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 8px;
+    background: var(--base-color);
+}
 img{
     width: 100%;
     height: auto;
+}
+
+/*================Home=================*/
+#home .home-content{
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+#home .social{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#home .social i{
+    color: var(--base-color);
+    font-size: 1.5rem;
+}
+#home .text h1{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    color: var(--title-color);
+}
+#home .text h2{
+    font-size:1.125rem;
+    padding-bottom: 1rem;
+    color: var(--text-color);
+}
+#home .text p{
+    padding-bottom: 1.5rem;
+    color:var(--text-color);
+}
+
+/*===========Sobre===============*/
+#about .title{
+    text-align: center;
 }
