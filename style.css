@@ -321,7 +321,6 @@ nav.show i.fa-solid.fa-xmark{
 /*================Footer=================*/
 footer{
     background: var(--base-color);
-    padding: 5rem 0 2rem;
 }
 footer .container{
     row-gap: 3.5rem;
