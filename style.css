@@ -20,17 +20,23 @@
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0, 0%, 98%);
     --body-color: hsl(0, 0%, 95%);
+    --input-color: hsl(var(--hue), 50%, 95%);
       
     /*FONTS*/
-    --size-title: 1.5rem;
-    --size-subtitle: .813rem;
+    --h1-size: 1.5rem;
+    --h3-size:1.125rem;
+    --small-subtitle: .813rem;
       
     --body-font:'poppins', sans-serif;
     --title-font:'Roboto', sans-serif;
 }
 
+/*===========Layaout================*/
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background: var(--body-color);
+    background:var(--body-color);
     font-family: var(--body-font);
 }
 p{
@@ -40,10 +46,7 @@ img{
     width: 100%;
     height: auto;
 }
-
-/*===========Layaout================*/
 #header{
-    border-bottom: 1px solid #e4e4e4;
     margin-bottom: 2rem;
     
     position: fixed;
@@ -68,12 +71,11 @@ img{
     gap: 2rem;
 }
 .title{
-    font: 700 var(--size-title) var(--title-font);
+    font: 700 var(--h1-size) var(--title-font);
     color: var(--title-color);
-    -webkit-font-smoothing:auto;
 }
 .subtitle{
-    font-size: var(--size-subtitle);
+    font-size: var(--small-subtitle);
     color: var(--text-color);
     display: block;
     margin-bottom: 3rem;
@@ -90,10 +92,13 @@ img{
     border-radius: 8px;
     background: var(--base-color);
 }
+.button:hover{
+    background: var(--title-color);
+}
 
 /*================Logo=================*/
 .logo{
-    font: 700 1.31rem var(--title-font);
+    font: 700 1.35rem var(--title-font);
     color: var(--title-color);
 }
 .logo span{
@@ -189,6 +194,9 @@ nav.show i.fa-solid.fa-xmark{
     flex-direction: column;
     gap: 1rem;
 }
+#home .social i:hover{
+    color:var(--title-color);
+}
 #home .social i{
     color: var(--base-color);
     font-size: 1.3rem;
@@ -237,7 +245,14 @@ nav.show i.fa-solid.fa-xmark{
     color: var(--base-color);
 }
 #services .services-title{
+    font-size: var(--h3-size);
     margin-bottom: 1rem;
+}
+#services .more{
+    color: var(--base-color);
+    font-size: var(--small-subtitle);
+    font-weight: 500;
+    cursor: pointer;
 }
 
 /*================Portfolio=================*/
@@ -250,14 +265,119 @@ nav.show i.fa-solid.fa-xmark{
 #portfolio p{
     margin-bottom: 1rem;
 }
+
 /*================Contact=================*/
 #contact .contact{
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
 }
+
 #contact .contact-icons{
     color: var(--base-color);
-    margin-right: 0.75rem;
-    font-size: 1.8rem;
+    margin-right: 1rem;
+    font-size: 2rem;
 }
+#contact .contact-title{
+    font-size: var(--h3-size);
+}
+#contact .contact-social{
+    font-size: var(--small-subtitle);
+    color: var(--text-color);
+}
+.contact-content{
+    background: var(--input-color);
+    border-radius: .5rem;
+    padding: .75rem 1rem .25rem;
+    border: 1px solid #ccc;
+}
+.contact-label{
+    font-size: 0.75rem;
+    color: var(--title-color);
+}
+.contact-content input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+.contact-input{
+    width: 100%;
+    background-color: var(--input-color);
+    font-size: 0.75rem;
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+}
+
+/*================Footer=================*/
+footer{
+    background: var(--base-color);
+}
+footer .container{
+    row-gap: 3.5rem;
+}
+footer h1{
+    color: white;
+}
+footer ul li a{
+    color: white;
+}
+footer .social a{
+    margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+footer .social a:hover{
+    transform: translateY(-8px);
+}
+footer .social i{
+    color: white;
+    font-size: 1.25rem;
+}
+footer .social i:hover{
+    color: var(--title-color);
+}
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 0.75rem;
+}
+
+/*==========BACK-TO-TOP===========*/
+
+.back-to-top{
+    background:var(--base-color);
+    color: var(--text-color-light);
+  
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+  
+    padding: 0.5rem;
+    clip-path: calc();
+    border-radius: 5px;
+  
+    font-size: 1.2rem;
+    line-height: 0;
+  
+    visibility: hidden;
+    opacity: 0;
+  
+    transition: 0.3s;
+    transform: translateY(100%);
+  }
+.back-to-top.show{
+    visibility: visible;
+    opacity: 1;
+  
+    transform: translateY(0);
+}
+
+/*
+.back-to-top:hover{
+    background-color: var(--title-color);
+} 
+*/ 

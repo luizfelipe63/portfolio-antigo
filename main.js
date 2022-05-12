@@ -15,3 +15,30 @@ for (const links of link) {
     nav.classList.remove('show')
   })
 }
+
+/*===============BOX SHADOWN SCROLL=============*/
+function boxShandonwScrool() {
+  const header = document.getElementById('header')
+  const navheigth = header.offsetHeight
+  if (window.scrollY >= navheigth) {
+    header.classList.add('scroll')
+  } else {
+    header.classList.remove('scroll')
+  }
+}
+
+/*===============BACK-TO-TOP=============*/
+function backToTop() {
+  const backToTopButton = document.querySelector('.back-to-top')
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+/*===========AGRUPAMENTO DE FUNÇÕES==========*/
+window.addEventListener('scroll', function () {
+  boxShandonwScrool()
+  backToTop()
+})

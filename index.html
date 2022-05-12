@@ -59,7 +59,7 @@
               ></a>
             </div>
             <div class="image">
-              <img src="assets/imagens/home.png" alt="" />
+              <img src="assets/imagens/home2.png" alt="" />
             </div>
           </div>
           <div class="text">
@@ -118,17 +118,23 @@
             <div class="service">
               <i class="fa-solid fa-code services-icons"></i>
               <h3 class="services-title">Sites Dinâmicos</h3>
-              <span>Veja mais <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="more"
+                >Veja mais <i class="fa-solid fa-arrow-right"></i
+              ></span>
             </div>
             <div class="service">
               <i class="fa-solid fa-sitemap services-icons"></i>
               <h3 class="services-title">Sites Estáticos</h3>
-              <span>Veja mais <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="more"
+                >Veja mais <i class="fa-solid fa-arrow-right"></i
+              ></span>
             </div>
             <div class="service">
               <i class="fa-solid fa-mobile-screen-button services-icons"></i>
               <h3 class="services-title">Aplicativos Mobile</h3>
-              <span>Veja mais <i class="fa-solid fa-arrow-right"></i></span>
+              <span class="more"
+                >Veja mais <i class="fa-solid fa-arrow-right"></i
+              ></span>
             </div>
           </div>
         </div>
@@ -160,33 +166,107 @@
       <section id="contact" class="section">
         <h1 class="title">Contate-me</h1>
         <span class="subtitle">Entrar em contato</span>
-        <div class="container">
-          <div class="contatacts">
+        <div class="container grid">
+          <div>
             <div class="contact">
               <i class="fa-solid fa-phone contact-icons"></i>
               <div>
-                <h3>Me liga</h3>
-                <span>(61)99450-2167</span>
+                <h3 class="contact-title">Me liga</h3>
+                <span class="contact-social">(61)99450-2167</span>
               </div>
             </div>
             <div class="contact">
               <i class="fa-solid fa-envelope contact-icons"></i>
               <div>
                 <h3>Email</h3>
-                <span>luizfpereira2@gamil.com</span>
+                <span class="contact-social">luizfpereira2@gamil.com</span>
               </div>
             </div>
             <div class="contact">
               <i class="fa-solid fa-location-dot contact-icons"></i>
               <div>
-                <h3>Localização</h3>
-                <span>Brasil - Luziânia - GO</span>
+                <h3 class="contact-title">Localização</h3>
+                <span class="contact-social">Brasil - Luziânia - GO</span>
               </div>
             </div>
           </div>
+          <form
+            action="https://formsquash.io/f/YiEO562Qx26Swa0B50tV"
+            class="contact-form grid"
+            method="POST"
+          >
+            <div class="contact-inputs grid">
+              <div class="contact-content">
+                <label for="nome" class="contact-label">Nome</label>
+                <input type="text" required name="nome" class="contact-input" />
+              </div>
+
+              <div class="contact-content">
+                <label for="email" class="contact-label">Email</label>
+                <input
+                  type="email"
+                  required
+                  name="email"
+                  class="contact-input"
+                />
+              </div>
+            </div>
+
+            <div class="contact-content">
+              <label for="projeto" class="contact-label">Projeto</label>
+              <input
+                type="text"
+                required
+                name="projeto"
+                class="contact-input"
+              />
+            </div>
+            <div class="contact-content">
+              <label for="mensagem" class="contact-label">Mensagem</label>
+              <textarea
+                name="mensagem"
+                required
+                cols="0"
+                rows="7"
+                class="contact-input"
+              ></textarea>
+            </div>
+
+            
+            <div><a href="#" class="button">Enviar <i class="fa-solid fa-paper-plane"></i></a></div>
+            </div>
+          </form>
         </div>
       </section>
     </main>
+
+    <!--=======================FOOTER==============================-->
+    <footer class="section">
+      <div class="container grid">
+        <h1>Luiz Felipe</h1>
+        <div class="menu">
+          <ul>
+            <li><a href="#about">Sobre mim</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <a href="https://github.com" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <p>&copy Luiz Felipe. All rigth reseverd</p>
+      </div>
+    </footer>
+    <a href="#home" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="main.js"></script>
   </body>
 </html>
