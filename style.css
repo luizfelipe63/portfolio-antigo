@@ -57,7 +57,7 @@ img{
     width: 100%;
 }
 #header.scroll{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .section{
@@ -130,7 +130,7 @@ nav .menu ul {
 
 /*========HOVER=============*/
 nav ul li a{
-    transition: .2s;
+    transition: .02s;
     position: relative;
 }
 nav ul li a:hover{
@@ -259,16 +259,13 @@ nav.show i.fa-solid.fa-xmark{
 }
 
 /*================Portfolio=================*/
-#portfolio .container{
-    grid-auto-flow: column;
-}
-#portfolio img{
+#portifolio img{
     border-radius: 5px;
 }
-#portfolio h4{
+#portifolio h4{
     margin: 0.5rem 0;
 }
-#portfolio p{
+#portifolio p{
     margin-bottom: 1rem;
 }
 
@@ -447,7 +444,6 @@ footer p{
         max-width: 24rem;
     }
     #about .container{
-        grid-auto-flow: column;
         column-gap: 5rem;
         justify-content: center;
     }
@@ -464,8 +460,20 @@ footer p{
     #services .service{
         padding: 6rem 0 2rem 2.5rem;
     }
-    #contact .container{
+    #contact .container,
+    #about .container,
+    #portifolio .container .project{
        grid-auto-flow: column;
+    }
+    #portifolio .project{
+        column-gap: 5rem;
+        justify-content: center;
+    }
+    #portifolio img{
+        width: 400px;
+    }
+    #portifolio .text{
+        max-width: 24rem;
     }
     #contact .contact-inputs{
         grid-template-columns: repeat(2, 1fr);
@@ -481,7 +489,7 @@ footer p{
 /*Large devices: 992 */
 @media(min-width:992px){
     :root{
-      --h1-size:2.3rem;
-     --small-subtitle:.875rem;
+        --h1-size:2.3rem;
+        --small-subtitle:.875rem;
     }
 }
