@@ -31,7 +31,7 @@
     --title-font:'Roboto', sans-serif;
 }
 
-/*===========Layaout================*/
+/*=======Layaout==========*/
 html{
     scroll-behavior: smooth;
 }
@@ -96,7 +96,7 @@ img{
     background: var(--title-color);
 }
 
-/*================Logo=================*/
+/*==========Logo============*/
 .logo{
     font: 700 1.35rem var(--title-font);
     color: var(--title-color);
@@ -108,7 +108,7 @@ img{
     color: var(--text-color-light);
 }
 
-/*================Navgtion=================*/
+/*==========Navigtion==========*/
 nav{
     height: var(--header-height);
     display: flex;
@@ -128,7 +128,7 @@ nav .menu ul {
     display: none;
 }
 
-/*========HOVER=============*/
+/*==========Hover===========*/
 nav ul li a{
     transition: .02s;
     position: relative;
@@ -137,7 +137,7 @@ nav ul li a:hover{
     color: var(--base-color);
 }
 
-/*=======MOSTRAR MENU=========*/
+/*=======Mostrar menu=========*/
 nav.show .menu{
     opacity: 1;
     visibility: visible;
@@ -160,7 +160,7 @@ nav ul.grid{
 }
   
   
-/*=============TOGGLE MENU=============*/
+/*=============Toggle Menu=============*/
   
 .toggle{
     color: var(--base-color);
@@ -187,7 +187,7 @@ nav.show i.fa-solid.fa-xmark{
 #home .home-content{
     grid-template-columns: .5fr 3fr;
     align-items: center;
-    padding-top: 3.5rem;
+    padding-top: 4.5rem;
 }
 #home .social{
     display: flex;
@@ -236,10 +236,15 @@ nav.show i.fa-solid.fa-xmark{
     grid-template-columns: repeat(2, 1fr)
 }
 #services .service{
+    position: relative;
     background:white;
     padding: 3.5rem .5rem 1.25rem 1.5rem;
     border-radius: 0.25rem;
     box-shadow: 3px 2px 4px rgba(0, 0, 0, .10);
+    transition: 0.3s;
+}
+#services .service:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 }
 #services .services-icons{
     display: block;
@@ -256,6 +261,13 @@ nav.show i.fa-solid.fa-xmark{
     font-size: var(--small-subtitle);
     font-weight: 500;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: .3rem;
+}
+#services .more:hover .services-button{
+    transform: translate(.25rem);
+    transition: 0.5s;
 }
 
 /*================Portfolio=================*/
@@ -401,7 +413,8 @@ footer p{
     .subtitle{
         margin-bottom: 4rem;
     }
-    /*Navegation*/
+
+    /*===Navigation===*/
     nav .menu{
         opacity: 1;
         visibility: visible;
@@ -422,6 +435,8 @@ footer p{
     nav .fa-solid.fa-bars{
         display: none;
     }
+
+    /*====Home====*/
     #home .container{
         justify-content: space-between;
         align-items: center;
@@ -443,6 +458,8 @@ footer p{
         margin: 0;
         max-width: 24rem;
     }
+
+    /*====About===*/
     #about .container{
         column-gap: 5rem;
         justify-content: center;
@@ -454,21 +471,28 @@ footer p{
     #about .image{
         width: 350px;
     }
+
+    /*====Services====*/
     #services .services{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3,238px);
+        justify-content: center;
     }
     #services .service{
         padding: 6rem 0 2rem 2.5rem;
-    }
-    #contact .container,
-    #about .container,
-    #portifolio .container .project{
-       grid-auto-flow: column;
     }
     #portifolio .project{
         column-gap: 5rem;
         justify-content: center;
     }
+
+    /*===grid-auto-flow===*/
+    #contact .container,
+    #about .container,
+    #portifolio .container .project{
+       grid-auto-flow: column;
+    }
+
+    /*====Portfolio====*/
     #portifolio img{
         width: 400px;
     }
@@ -480,7 +504,9 @@ footer p{
     }
     #contact .contact-form{
         max-width: 460px;
-    } 
+    }
+
+    /*====Footer=====*/ 
     footer .container{
         grid-template-columns: repeat(3, 1fr);
     }
