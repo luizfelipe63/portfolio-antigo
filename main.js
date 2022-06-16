@@ -42,3 +42,13 @@ window.addEventListener('scroll', function () {
   boxShandonwScrool()
   backToTop()
 })
+
+/*===============THEME DARK-MODE=============*/
+
+/*const darkMode = document.querySelector('.dark')
+const content = document.getElementsByTagName('body')[0]
+
+darkMode.addEventListener('click', function () {
+  content.classList.toggle('noite')
+})
+*/
