@@ -281,6 +281,14 @@ nav.show i.fa-solid.fa-xmark{
     margin-bottom: 1rem;
 }
 
+.swiper-slide{
+    height: auto;
+    padding: 4rem 1rem;
+  }
+  .swiper-pagination-bullet{
+    background-color: var(--base-color);
+  }
+
 /*================Contact=================*/
 #contact .contact{
     display: flex;
@@ -519,8 +527,9 @@ footer p{
         --small-subtitle:.875rem;
     }
 }
+
 /*
-body.noite{
+.noite{
     background-color: black;
 }
 */

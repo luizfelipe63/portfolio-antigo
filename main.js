@@ -37,6 +37,25 @@ function backToTop() {
   }
 }
 
+/*===============TESTEMONNIALS SLIDERS=============/*
+
+/*
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets'
+  },
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+})
+/*
+
 /*===========AGRUPAMENTO DE FUNÇÕES==========*/
 window.addEventListener('scroll', function () {
   boxShandonwScrool()
@@ -44,8 +63,8 @@ window.addEventListener('scroll', function () {
 })
 
 /*===============THEME DARK-MODE=============*/
-
-/*const darkMode = document.querySelector('.dark')
+/*
+const darkMode = document.querySelector('.dark')
 const content = document.getElementsByTagName('body')[0]
 
 darkMode.addEventListener('click', function () {

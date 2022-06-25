@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luiz Felipe</title>
+    <!--SWAIPER-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <!--===================ESTILO=================-->
     <link rel="stylesheet" href="style.css" />
 
@@ -32,7 +38,7 @@
           <ul class="grid">
             <li><a href="#home" class="title">Home</a></li>
             <li><a href="#about" class="title">Sobre</a></li>
-            <li><a href="#services" class="title">Serviços</a></li>
+            <!--<li><a href="#services" class="title">Serviços</a></li>-->
             <li><a href="#portifolio" class="title">Portfolio</a></li>
             <li><a href="#contact" class="title">Contato</a></li>
             <!--<li><i class=" dark fa-solid fa-moon"></i></li>-->
@@ -52,11 +58,11 @@
                 <a href="https://github.com/luizfelipe63" target="_blank"
                   ><i class="fa-brands fa-github"></i
                 ></a>
-                <a href="https://www.instagram.com/felipeluiz8a/" target="_blank"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
                 <a href="https://www.linkedin.com/in/luiz-feliperocha/" target="_blank"
                   ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="https://www.instagram.com/felipeluiz8a/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
                 ></a>
               </div>
               <div class="image">
@@ -64,12 +70,9 @@
               </div>
             <div class="text">
               <h1>Luiz Felipe</h1>
-              <h2>Desenvolvedor web</h2>
+              <h2>Developer Front-end</h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
-                repellat temporibus blanditiis facere, voluptate ducimus error
-                quae tempora? Perferendis corrupti, sequi odio iste vitae maiores
-                adipisci voluptatibus commodi repudiandae eum.
+                 conhecimentos de desenvolvimento web, produzindo trabalhos de qualidade e compromisso.
               </p>
               <a href="#contact" class="button"
                 >Fale comigo <i class="fa-solid fa-paper-plane"></i
@@ -89,7 +92,7 @@
           </div>
           <div class="text">
             <p>
-              Sou desenvolvedor web, com amplo conhecimento e anos de experiência, atuando em tecnologias web, entregando trabalhos de qualidade. 
+              O meu nome é <strong>Luiz Felipe</strong>. Sou estudante de Análise e desenvolvimento de sistemas. Comecei a interessar-me por tecnologia aos meus 16 anos quando comprei o meu primeiro computador. Sou muito curioso então comecei a ver conteúdo sobre programação. Hoje já conheço tecnologias voltadas para o <strong>Front-end</strong>.
             </p>
             <a href="assets/textos/Currículoti.pdf" download="curriculo"  class="button"
               >Download CV <i class="fa-solid fa-download"></i
@@ -109,6 +112,7 @@
       -->
 
       <!--=======================SERVICES==============================-->
+      <!--
       <section id="services" class="section">
         <h1 class="title">Serviços</h1>
         <span class="subtitle">Meus serviços</span>
@@ -138,18 +142,24 @@
           </div>
         </div>
       </section>
+      -->
 
       <!--=======================PORTFOLIO==============================-->
       <section id="portifolio" class="section">
         <h1 class="title">Portfolio</h1>
         <span class="subtitle">Meus projetos</span>
         <div class="container">
-            <div class="project grid">
-              <div><img src="assets/imagens/projeto2.jpg" alt=""></div>
-              <div class="text">
-                <h4>Site Responsivo</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas asperiores veniam eos fugiat voluptatem illum, nesciunt quos explicabo blanditiis neque deleniti aliquam ea facilis inventore quo eaque tenetur quibusdam.</p>
-                <a href="https://luizfelipe63.github.io/barber-responsive/" target="_blank" class="button">Demo <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="projects swiper">
+              <div class="swiper-wrapper">
+                <div class="project grid swiper-slide">
+                  <div><img src="assets/imagens/projeto2.jpg" alt=""></div>
+                  <div class="text">
+                    <h4>Site Responsivo</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas asperiores veniam eos fugiat voluptatem illum, nesciunt quos explicabo blanditiis neque deleniti aliquam ea facilis inventore quo eaque tenetur quibusdam.</p>
+                    <a href="https://luizfelipe63.github.io/barber-responsive/" target="_blank" class="button">Demo <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
         </div>
@@ -165,7 +175,8 @@
               <i class="fa-solid fa-phone contact-icons"></i>
               <div>
                 <h3 class="contact-title">Me liga</h3>
-                <span class="contact-social">(**)*****-****</span>
+                <span class="contact-social">(61)
+                99450-2167</span>
               </div>
             </div>
             <div class="contact">
@@ -240,8 +251,8 @@
         <div class="menu">
           <ul>
             <li><a href="#about">Sobre mim</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#skills">Habilidades</a></li>
+            <!--<li><a href="#services">Serviços</a></li>
+            <li><a href="#skills">Habilidades</a></li>-->
             <li><a href="#portifolio">Portfolio</a></li>
           </ul>
         </div>
@@ -249,12 +260,13 @@
           <a href="https://github.com/luizfelipe63" target="_blank"
             ><i class="fa-brands fa-github"></i
           ></a>
-          <a href="https://www.instagram.com/felipeluiz8a/" target="_blank"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
           <a href="https://www.linkedin.com/in/luiz-feliperocha/" target="_blank"
             ><i class="fa-brands fa-linkedin"></i
           ></a>
+          <a href="https://www.instagram.com/felipeluiz8a/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          
         </div>
       </div>
       <p>&copy Luiz Felipe. All rigth reseverd</p>
