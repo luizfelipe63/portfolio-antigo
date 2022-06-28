@@ -91,6 +91,7 @@ img{
     padding: 1.2rem;
     border-radius: 8px;
     background: var(--base-color);
+    transition: .3s;
 }
 .button:hover{
     background: var(--title-color);
@@ -273,6 +274,10 @@ nav.show i.fa-solid.fa-xmark{
 /*================Portfolio=================*/
 #portifolio img{
     border-radius: 5px;
+    transition: .3s;
+}
+#portifolio img:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
 }
 #portifolio h4{
     margin: 0.5rem 0;
@@ -501,11 +506,11 @@ footer p{
     }
 
     /*====Portfolio====*/
-    #portifolio img{
-        width: 400px;
-    }
     #portifolio .text{
-        max-width: 24rem;
+        max-width: 22rem;
+    }
+    #portifolio img{
+        width: 300px;
     }
     #contact .contact-inputs{
         grid-template-columns: repeat(2, 1fr);
